@@ -1,0 +1,139 @@
+@mixin background-img($bg-img-path,$bg-repeat:no-repeat,$bg-size:cover,$bg-attach:fixed,$bg-position:bottom){
+    background-image:url($bg-img-path);
+    background-repeat: $bg-repeat;
+    background-size: $bg-size;
+    background-attachment: $bg-attach;
+    background-position: $bg-position;
+}
+@mixin box-shadow($shadow) {
+    box-shadow:1px 4px 10px 1px rgba($shadow, 100%);
+}
+@mixin background-color($white-color) {
+    background-color: $white-color;
+} 
+@mixin linear-gradient($direction,$from,$to) {
+    background: linear-gradient($direction,$from 0%,$to 51%);
+} 
+@mixin border($width,$type,$bd-color,$radius:0.5rem){
+   border:$width $type $bd-color ;
+   border-radius: $radius;
+}
+@mixin border-bottom($width,$type,$bd-color){
+    border-bottom:$width $type $bd-color ;
+}
+%btn{
+    padding:20px 50px;
+    text-transform: $capital;
+    text-align:center;
+    display: inline-block;
+    font-size: 0.8rem;
+}
+%headers-style{
+    font-size:3rem;
+    font-weight: 300;
+    text-transform: $capital;
+}
+%paragraphs-style{
+    color:$text-color;
+    line-height: 1.5;
+}
+%btn-white{
+    color:$black;
+    @extend %btn;
+    @include background-color($white-color);
+    @include border(2px,solid,$bd-color,0.5rem);
+}
+%btn-purple{
+    color:$white-color;
+    @extend %btn;
+    @include linear-gradient(to right,$from,$to);
+    @include border(null,null,null,0.5rem);
+}
+%sec-head{
+    text-transform: $capital;
+    font-size:2.2rem;
+    font-weight: 500;
+    color:#222;
+}
+%sec-paragraph{
+    color:$text-color;
+    font-size:0.9rem;
+    line-height:1.5;
+    width:42%;
+    margin:0 auto;
+}
+%btn-price{
+    background-color: #f9f9ff;
+    color: #222;
+    @include border(null,null,#ddd,0.5rem);
+    @extend %btn; 
+}
+%margin-block-items{
+    margin-block-start: 0;
+    margin-block-end:0;
+}
+%margin-inline-items{
+    margin-inline-start:0;
+    margin-inline-end:0;
+}
+%btn-news{
+    padding:5px 30px;
+    text-transform: $capital;
+    color:#777;
+    @include border(2px,solid,#ddd,0.5rem);
+}
+%footer-header{
+    font-size:1.2rem;
+    text-transform: $uppercase;
+    font-weight: 400;
+}
+%form-style{
+    border-radius: 25px;
+    padding:10px 25px;
+    border:none;
+}
+%input{
+    @extend %form-style;
+    width:65%;
+}
+%btn-footer{
+    @extend %form-style;
+    @include linear-gradient(to right,$from,$to);
+    color:$white-color;
+    text-transform:$capital;
+}
+%li-style{
+    @include background-color(#111);
+    width:30px;
+    height:30px;
+    padding:5px 10px;
+    text-align:center;
+}
+// 
+$xs-width:320;
+$sm-width:576;
+$md-width:768;
+$lg-width:992;
+$xl-width:1200;
+$plus-one:1;
+
+@mixin xs-screen {
+    @media (min-width: #{$xs-width}px) and (max-width:#{$sm-width}px) {
+        @content;
+    }
+}
+@mixin sm-screen {
+    @media (min-width: #{$sm-width + $plus-one}px) and (max-width:#{$md-width}px) {
+        @content;
+    }
+}
+@mixin md-screen {
+    @media (min-width: #{$md-width + $plus-one}px)and (max-width:#{$lg-width}px) {
+        @content;
+    }
+}
+@mixin lg-screen {
+    @media (min-width: #{$lg-width + $plus-one}px) and (max-width:#{$xl-width}px) {
+        @content;
+    }
+}

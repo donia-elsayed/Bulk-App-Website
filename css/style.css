@@ -1,0 +1,750 @@
+.banner__area .banner__area__content .banner__area__info a, .about .about-content .about__info a, .interior .interior__content .interior__info a, .pricing .pricing__items .pricing__item a, .download-app .download-app__info .download-app__btn a {
+  padding: 20px 50px;
+  text-transform: capitalize;
+  text-align: center;
+  display: inline-block;
+  font-size: 0.8rem; }
+
+.about .about-content .about__info h3, .interior .interior__content .interior__info h3 {
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: capitalize; }
+
+.feature__items .feature__item p, .about .about-content .about__info p, .interior .interior__content .interior__info p {
+  color: #AFAEB3;
+  line-height: 1.5; }
+
+.banner__area .banner__area__content .banner__area__info a {
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #d4d4d4;
+  border-radius: 0.5rem; }
+
+.about .about-content .about__info a, .interior .interior__content .interior__info a {
+  color: #fff;
+  background: linear-gradient(to right, #9646DB 0%, #7249fb 51%);
+  border-radius: 0.5rem; }
+
+.feature__header h2, .pricing .pricing__header h2, .screenshot .screenshot__header h2, .testimonials .testimonial__header h2, .download-app .download-app__info h2, .last-news .last-news__header h2 {
+  text-transform: capitalize;
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #222; }
+
+.feature__header p, .pricing .pricing__header p, .screenshot .screenshot__header p, .testimonials .testimonial__header p, .testimonials .testimonial__items .testimonial__item .testimonial__item__info p, .last-news .last-news__header p {
+  color: #AFAEB3;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  width: 42%;
+  margin: 0 auto; }
+
+.pricing .pricing__items .pricing__item a {
+  background-color: #f9f9ff;
+  color: #222;
+  border: #ddd;
+  border-radius: 0.5rem; }
+
+.pricing .pricing__items .pricing__item .pricing__item__info .pricing__item__title h3, .pricing .pricing__items .pricing__item .pricing__item__info .pricing__item__title p, .pricing .pricing__items .pricing__item .pricing__item__list, .screenshot .screenshot__images figure, .testimonials .testimonial__items .testimonial__item .testimonial__item__info h4, .testimonials .testimonial__items .testimonial__item .testimonial__item__info h5, .download-app .download-app__info .download-app__btn a .btn__content .text h4, .download-app .download-app__info .download-app__btn a .btn__content .text p, .last-news .last-news__items .last-news__item h4, .footer .footer__items .footer__item__product h6, .footer .footer__items .footer__item__new h6, .footer .footer__items .footer__item__feed h6 {
+  margin-block-start: 0;
+  margin-block-end: 0; }
+
+.screenshot .screenshot__images figure, .testimonials .testimonial__items .testimonial__item figure {
+  margin-inline-start: 0;
+  margin-inline-end: 0; }
+
+.last-news .last-news__items .last-news__item a {
+  padding: 5px 30px;
+  text-transform: capitalize;
+  color: #777;
+  border: 2px solid #ddd;
+  border-radius: 0.5rem; }
+
+.footer .footer__items .footer__item__product h6, .footer .footer__items .footer__item__new h6, .footer .footer__items .footer__item__feed h6 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 400; }
+
+.footer .footer__items .footer__item__new form input, .footer .footer__items .footer__item__new form button {
+  border-radius: 25px;
+  padding: 10px 25px;
+  border: none; }
+
+.footer .footer__items .footer__item__new form input {
+  width: 65%; }
+
+.footer .footer__items .footer__item__new form button {
+  background: linear-gradient(to right, #9646DB 0%, #7249fb 51%);
+  color: #fff;
+  text-transform: capitalize; }
+
+.footer .footer__item__copyright .footer__item__social-media li a {
+  background-color: #111;
+  width: 30px;
+  height: 30px;
+  padding: 5px 10px;
+  text-align: center; }
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif; }
+
+.container {
+  width: 90%;
+  margin: 0 auto; }
+
+.d-flex {
+  display: flex; }
+
+.d-grid {
+  display: grid; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+li {
+  list-style: none; }
+
+.mar__bet__section {
+  margin: 9% 0; }
+
+.header {
+  height: 140vh;
+  position: relative;
+  background-image: url("../assets/img/banner/home-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom; }
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.5rem; }
+  .navbar .navbar__logo {
+    width: 20%; }
+  .navbar .navbar__list {
+    width: 60%;
+    justify-content: space-between; }
+    .navbar .navbar__list li {
+      text-transform: uppercase;
+      font-size: 1rem; }
+
+.banner__area .banner__area__content {
+  justify-content: flex-start;
+  padding-top: 150px; }
+  .banner__area .banner__area__content .banner__area__info h1 {
+    font-size: 4rem;
+    width: 41%;
+    text-transform: capitalize;
+    color: #fff; }
+    .banner__area .banner__area__content .banner__area__info h1 span {
+      text-transform: lowercase; }
+  .banner__area .banner__area__content .banner__area__info p {
+    color: #fff;
+    line-height: 1.5;
+    width: 45%; }
+  .banner__area .banner__area__content .banner__area__info p::first-letter {
+    text-transform: capitalize; }
+
+.banner__area__img {
+  width: 20%;
+  position: absolute;
+  right: 1rem;
+  justify-content: flex-end;
+  top: 20%; }
+
+.banner__area__content {
+  margin: auto 0; }
+
+.feature__header {
+  text-align: center; }
+  .feature__header p::first-letter {
+    text-transform: capitalize; }
+
+.feature__items {
+  padding: 3rem 0 0; }
+  .feature__items .feature__item {
+    flex-basis: 25%;
+    padding: 50px 30px;
+    margin-right: 1.5rem;
+    box-shadow: 1px 4px 10px 1px #cccccc; }
+    .feature__items .feature__item h3 {
+      text-transform: capitalize; }
+
+.about {
+  background-color: #F5F8FD;
+  padding: 3rem 0; }
+  .about .about-content {
+    justify-content: space-between; }
+    .about .about-content .about__info {
+      width: 40%; }
+      .about .about-content .about__info h3 span {
+        text-transform: lowercase; }
+      .about .about-content .about__info a {
+        margin-top: 1.5rem; }
+
+.interior {
+  padding: 3rem 0; }
+  .interior .interior__content {
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .interior .interior__content .interior__info {
+      width: 40%; }
+      .interior .interior__content .interior__info h3 span {
+        text-transform: lowercase; }
+      .interior .interior__content .interior__info a {
+        margin-top: 1.5rem; }
+
+.video__sec {
+  margin: 3rem 0 5rem; }
+  .video__sec .video__content {
+    justify-content: center;
+    position: relative; }
+    .video__sec .video__content video {
+      width: 100%; }
+    .video__sec .video__content img {
+      display: inline-block;
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+
+.pricing {
+  background-color: #F5F8FD;
+  padding: 6rem 0; }
+  .pricing .pricing__header {
+    text-align: center; }
+    .pricing .pricing__header p::first-letter {
+      text-transform: capitalize; }
+  .pricing .pricing__items {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 2.5rem; }
+    .pricing .pricing__items .pricing__item {
+      flex-basis: 27%;
+      text-align: center;
+      padding: 1.5rem 0 2.5rem;
+      background-color: #fff; }
+      .pricing .pricing__items .pricing__item .pricing__item__info {
+        justify-content: space-evenly;
+        align-items: center;
+        border-bottom: 1px solid #d4d4d4; }
+        .pricing .pricing__items .pricing__item .pricing__item__info h2 {
+          font-size: 2.5rem;
+          color: #222; }
+        .pricing .pricing__items .pricing__item .pricing__item__info .pricing__item__title h3 {
+          text-transform: capitalize;
+          font-size: 1.25rem;
+          font-weight: 300;
+          color: #222; }
+        .pricing .pricing__items .pricing__item .pricing__item__info .pricing__item__title p {
+          color: #777;
+          margin: 0.5rem 0;
+          font-size: 0.9rem; }
+        .pricing .pricing__items .pricing__item .pricing__item__info .pricing__item__title p::first-letter {
+          text-transform: capitalize; }
+      .pricing .pricing__items .pricing__item .pricing__item__list {
+        padding: 2rem 0; }
+        .pricing .pricing__items .pricing__item .pricing__item__list li {
+          color: #777;
+          line-height: 2;
+          font-size: 0.9rem;
+          text-transform: capitalize; }
+      .pricing .pricing__items .pricing__item a {
+        font-size: 0.9rem; }
+      .pricing .pricing__items .pricing__item a:hover {
+        background: linear-gradient(to right, #9646DB 0%, #7249fb 51%);
+        color: #fff; }
+
+.screenshot {
+  padding: 4rem 0; }
+  .screenshot .screenshot__header {
+    text-align: center; }
+    .screenshot .screenshot__header p::first-letter {
+      text-transform: capitalize; }
+  .screenshot .screenshot__images {
+    padding-top: 3rem;
+    justify-content: space-evenly; }
+
+.testimonials {
+  background-color: #F5F8FD;
+  padding: 4rem 0; }
+  .testimonials .testimonial__header {
+    text-align: center; }
+    .testimonials .testimonial__header p::first-letter {
+      text-transform: capitalize; }
+  .testimonials .testimonial__items {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 3rem; }
+    .testimonials .testimonial__items .testimonial__item {
+      justify-content: space-evenly;
+      flex-basis: 42%;
+      padding: 2rem 0;
+      background-color: #fff; }
+      .testimonials .testimonial__items .testimonial__item .testimonial__item__info {
+        width: 65%;
+        padding: 1rem 0; }
+        .testimonials .testimonial__items .testimonial__item .testimonial__item__info p {
+          width: 100%;
+          margin-bottom: 1rem; }
+        .testimonials .testimonial__items .testimonial__item .testimonial__item__info p::first-letter {
+          text-transform: capitalize; }
+        .testimonials .testimonial__items .testimonial__item .testimonial__item__info h4 {
+          color: #222;
+          text-transform: capitalize;
+          margin-bottom: 0.8rem; }
+        .testimonials .testimonial__items .testimonial__item .testimonial__item__info h5 {
+          color: #777;
+          text-transform: capitalize; }
+          .testimonials .testimonial__items .testimonial__item .testimonial__item__info h5 span {
+            text-transform: uppercase; }
+
+.download-app {
+  background: linear-gradient(to right, #9646DB 0%, #7249fb 51%);
+  padding: 4rem 0; }
+  .download-app .download-app__info {
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    width: 70%; }
+    .download-app .download-app__info h2 {
+      color: #fff; }
+    .download-app .download-app__info p {
+      line-height: 1.5;
+      text-align: center;
+      color: #fff; }
+    .download-app .download-app__info .download-app__btn {
+      margin-top: 1.5rem; }
+      .download-app .download-app__info .download-app__btn a {
+        border: 2px solid #d4d4d4;
+        border-radius: 0.5rem;
+        padding: 15px 40px;
+        margin-right: 1rem; }
+        .download-app .download-app__info .download-app__btn a .btn__content {
+          align-items: center; }
+          .download-app .download-app__info .download-app__btn a .btn__content .icon {
+            font-size: 2.5rem;
+            float: left; }
+          .download-app .download-app__info .download-app__btn a .btn__content .text {
+            margin-left: 1rem; }
+            .download-app .download-app__info .download-app__btn a .btn__content .text h4 {
+              font-size: 1.5rem;
+              font-weight: 300; }
+            .download-app .download-app__info .download-app__btn a .btn__content .text p {
+              width: 100%; }
+
+.last-news {
+  padding: 4rem 0; }
+  .last-news .last-news__header {
+    text-align: center; }
+    .last-news .last-news__header p::first-letter {
+      text-transform: capitalize; }
+  .last-news .last-news__items {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 3.5rem; }
+    .last-news .last-news__items .last-news__item {
+      padding: 4rem 1.5rem;
+      flex-basis: 25%;
+      line-height: 1.6;
+      background-color: #F5F8FD; }
+      .last-news .last-news__items .last-news__item a:hover {
+        background: linear-gradient(to right, #9646DB 0%, #7249fb 51%);
+        color: #fff;
+        border: none; }
+      .last-news .last-news__items .last-news__item h4 {
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #222;
+        margin-top: 1.5rem; }
+      .last-news .last-news__items .last-news__item p {
+        color: #777; }
+      .last-news .last-news__items .last-news__item .last-news__item__icons {
+        color: #777; }
+        .last-news .last-news__items .last-news__item .last-news__item__icons i {
+          padding: 0 0.5rem; }
+          .last-news .last-news__items .last-news__item .last-news__item__icons i span {
+            padding: 0 0.5rem; }
+
+.footer {
+  background-color: #222;
+  padding: 6rem 3rem; }
+  .footer .footer__items {
+    grid-template-columns: 25% 55% 20%;
+    grid-template-rows: 80%;
+    color: #fff; }
+    .footer .footer__items .footer__item__product .footer__item__product__list {
+      padding-inline-start: 0;
+      text-transform: capitalize;
+      line-height: 1.8; }
+    .footer .footer__items .footer__item__new p {
+      opacity: 0.6; }
+    .footer .footer__items .footer__item__new form {
+      padding-top: 1.5rem; }
+      .footer .footer__items .footer__item__new form input {
+        position: relative; }
+      .footer .footer__items .footer__item__new form button {
+        position: absolute;
+        left: 55%; }
+    .footer .footer__items .footer__item__feed .footer__item__feed__img {
+      padding-inline-start: 0;
+      grid-template-columns: repeat(4, 25%);
+      row-gap: 5%; }
+  .footer .footer__item__copyright {
+    margin: 2rem 0;
+    grid-template-columns: 81% 15%; }
+    .footer .footer__item__copyright p {
+      color: #fff;
+      opacity: 0.6; }
+      .footer .footer__item__copyright p i {
+        color: #6247ea; }
+      .footer .footer__item__copyright p a {
+        color: #6247ea;
+        text-transform: capitalize;
+        opacity: 1; }
+    .footer .footer__item__copyright p::first-letter {
+      text-transform: capitalize; }
+    .footer .footer__item__copyright .footer__item__social-media {
+      padding-inline-start: 0;
+      grid-template-columns: repeat(4, 25%); }
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .header {
+    height: 90vh; }
+    .header .navbar__list {
+      display: none;
+      width: 0%; }
+    .header .banner__area__content {
+      padding-top: 25px;
+      flex-wrap: wrap; }
+      .header .banner__area__content .banner__area__info h1 {
+        font-size: 1.2rem; }
+      .header .banner__area__content .banner__area__info p {
+        font-size: 0.9rem;
+        width: 100%; }
+    .header .banner__area__img {
+      display: none;
+      width: 0; }
+  .feature__header h2 {
+    font-size: 1.2rem; }
+  .feature__header p {
+    width: 100%; }
+  .feature__items {
+    flex-wrap: wrap; }
+    .feature__items .feature__item {
+      flex-basis: 100%;
+      padding: 10px;
+      margin-bottom: 1rem; }
+  .about .about-content {
+    flex-wrap: wrap; }
+    .about .about-content .about-img img {
+      width: 100%; }
+    .about .about-content .about__info {
+      width: 100%; }
+  .interior .interior__content .interior__info {
+    width: 100%; }
+  .interior .interior__content .interior-img img {
+    width: 100%; }
+  .video__sec {
+    margin: 2rem 0 3rem; }
+  .pricing .pricing__header h2 {
+    font-size: 1.2rem; }
+  .pricing .pricing__header p {
+    width: 100%; }
+  .pricing .pricing__items {
+    flex-wrap: wrap; }
+    .pricing .pricing__items .pricing__item {
+      flex-basis: 100%;
+      margin-bottom: 1rem; }
+      .pricing .pricing__items .pricing__item p {
+        width: 100%; }
+  .screenshot .screenshot__header h2 {
+    font-size: 1.2rem; }
+  .screenshot .screenshot__header p {
+    width: 100%; }
+  .screenshot .screenshot__images figure {
+    display: none; }
+    .screenshot .screenshot__images figure:first-child {
+      display: block; }
+  .testimonials .testimonial__header h2 {
+    font-size: 1.2rem; }
+  .testimonials .testimonial__header p {
+    width: 100%; }
+  .testimonials .testimonial__items .testimonial__item {
+    flex-basis: 100%;
+    margin-bottom: 1rem; }
+  .download-app .download-app__info {
+    width: 100%; }
+    .download-app .download-app__info h2 {
+      font-size: 1.2rem; }
+    .download-app .download-app__info .download-app__btn a {
+      margin-bottom: 1rem; }
+  .last-news .last-news__header h2 {
+    font-size: 1.2rem; }
+  .last-news .last-news__header p {
+    width: 100%; }
+  .last-news .last-news__items .last-news__item {
+    flex-basis: 100%;
+    margin-bottom: 1rem; }
+  .footer {
+    padding: 3rem; }
+    .footer .footer__items {
+      grid-template-columns: 100%;
+      grid-template-rows: 40%; }
+    .footer .footer__item__new form {
+      padding-top: 0.5rem; }
+      .footer .footer__item__new form input {
+        width: 100%; }
+      .footer .footer__item__new form button {
+        left: 70%;
+        padding: 10px; }
+    .footer .footer__item__copyright {
+      grid-template-columns: 100%;
+      margin: 4rem 0 2rem; }
+      .footer .footer__item__copyright .footer__item__social-media {
+        grid-template-columns: repeat(4, 20%); } }
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .header {
+    height: 50vh; }
+    .header .navbar__list {
+      display: none; }
+    .header .banner__area__content {
+      padding-top: 25px;
+      flex-wrap: wrap; }
+      .header .banner__area__content .banner__area__info h1 {
+        font-size: 1.2rem; }
+      .header .banner__area__content .banner__area__info p {
+        width: 40%;
+        font-size: 0.9rem; }
+    .header .banner__area__img {
+      display: none; }
+  .feature__header p {
+    width: 100%;
+    font-size: 1.5rem; }
+  .feature__items {
+    justify-content: center;
+    flex-wrap: wrap; }
+    .feature__items .feature__item {
+      flex-basis: 35%;
+      margin-bottom: 1rem; }
+  .about .about-content {
+    flex-wrap: wrap; }
+    .about .about-content .about-img img {
+      width: 100%; }
+    .about .about-content .about__info {
+      width: 100%; }
+  .interior .interior__content .interior__info {
+    width: 100%; }
+  .interior .interior__content .interior-img img {
+    width: 100%; }
+  .video__sec {
+    margin: 2rem 0 3rem; }
+  .screenshot .screenshot__header p {
+    width: 100%;
+    font-size: 1.5rem; }
+  .screenshot .screenshot__images figure {
+    display: none; }
+    .screenshot .screenshot__images figure:nth-child(odd) {
+      display: block; }
+  .pricing .pricing__header p {
+    width: 100%;
+    font-size: 1.5rem; }
+  .pricing .pricing__items .pricing__item {
+    flex-basis: 48%;
+    margin-bottom: 1rem;
+    padding: 1rem 0; }
+  .testimonials .testimonial__header p {
+    width: 100%;
+    font-size: 1.5rem; }
+  .testimonials .testimonial__items .testimonial__item {
+    flex-basis: 100%;
+    margin-bottom: 1rem; }
+    .testimonials .testimonial__items .testimonial__item .testimonial__item__info p {
+      font-size: 1.5rem; }
+  .download-app .download-app__info {
+    width: 100%; }
+    .download-app .download-app__info .download-app__btn a {
+      margin-bottom: 1rem; }
+  .last-news .last-news__header p {
+    width: 100%;
+    font-size: 1.5rem; }
+  .last-news .last-news__items .last-news__item {
+    flex-basis: 45%;
+    padding: 1rem 0.5rem;
+    margin-bottom: 1rem; }
+  .footer {
+    padding: 3rem; }
+    .footer .footer__items {
+      grid-template-columns: 40% 60%;
+      grid-template-rows: 60%; }
+    .footer .footer__item__new {
+      padding-left: 1rem; }
+      .footer .footer__item__new form button {
+        left: 65% !important; }
+    .footer .footer__item__copyright {
+      grid-template-columns: 100%;
+      margin: 4rem 0 2rem; }
+      .footer .footer__item__copyright .footer__item__social-media {
+        grid-template-columns: repeat(4, 10%); } }
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .header {
+    height: 120vh; }
+    .header .navbar {
+      justify-content: flex-start; }
+      .header .navbar .navbar__list li:nth-child(odd) {
+        display: none; }
+  .banner__area__img {
+    width: 35%;
+    right: 1.5rem; }
+    .banner__area__img img {
+      width: 100%; }
+  .feature__header p {
+    width: 100%;
+    font-size: 1.3rem; }
+  .feature__items {
+    flex-wrap: wrap; }
+    .feature__items .feature__item {
+      flex-basis: 40%;
+      margin-bottom: 1rem;
+      padding: 1rem; }
+  .about .about-content {
+    flex-wrap: wrap; }
+    .about .about-content .about-img img {
+      width: 100%; }
+    .about .about-content .about__info {
+      width: 100%; }
+      .about .about-content .about__info p {
+        width: 100%;
+        font-size: 1.5rem; }
+  .interior .interior__content .interior__info {
+    width: 100%; }
+    .interior .interior__content .interior__info p {
+      width: 100%;
+      font-size: 1.5rem; }
+  .interior .interior__content .interior-img img {
+    width: 100%; }
+  .pricing .pricing__header p {
+    width: 100%;
+    font-size: 1.3rem; }
+  .pricing .pricing__items .pricing__item {
+    flex-basis: 49%;
+    margin-bottom: 1rem;
+    padding: 1.5rem 0; }
+    .pricing .pricing__items .pricing__item .pricing__item__list li {
+      font-size: 1.2rem; }
+  .screenshot .screenshot__header p {
+    width: 100%;
+    font-size: 1.3rem; }
+  .screenshot .screenshot__images figure:last-child {
+    display: none; }
+  .testimonials .testimonial__header p {
+    width: 100%;
+    font-size: 1.3rem; }
+  .download-app .download-app__info {
+    width: 100%; }
+    .download-app .download-app__info .download-app__btn a {
+      margin-bottom: 1rem; }
+  .last-news .last-news__header p {
+    width: 100%;
+    font-size: 1.3rem; }
+  .last-news .last-news__items .last-news__item {
+    flex-basis: 45%;
+    padding: 1rem 0.5rem;
+    margin-bottom: 1rem; }
+  .footer {
+    padding: 3rem; }
+    .footer .footer__items {
+      grid-template-columns: 40% 60%;
+      grid-template-rows: 60%; }
+    .footer .footer__item__new {
+      padding-left: 1rem; }
+      .footer .footer__item__new form button {
+        left: 65% !important; }
+    .footer .footer__item__copyright {
+      grid-template-columns: 100%;
+      margin: 4rem 0 2rem; }
+      .footer .footer__item__copyright .footer__item__social-media {
+        grid-template-columns: repeat(4, 10%); } }
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .header {
+    height: 80vh; }
+    .header .navbar .navbar__list {
+      width: 70%; }
+  .feature__header p {
+    width: 100%;
+    font-size: 1.5rem; }
+  .feature__items {
+    justify-content: center;
+    flex-wrap: wrap; }
+    .feature__items .feature__item {
+      flex-basis: 28%;
+      margin-bottom: 1rem;
+      padding: 1rem 0.5rem; }
+      .feature__items .feature__item:last-child {
+        display: none; }
+  .about .about-content .about-img {
+    width: 40%;
+    margin: auto 0; }
+    .about .about-content .about-img img {
+      width: 100%; }
+  .about .about-content .about__info {
+    width: 60%; }
+    .about .about-content .about__info p {
+      width: 100%;
+      font-size: 1.3rem; }
+  .interior .interior__content .interior__info {
+    width: 60%; }
+    .interior .interior__content .interior__info p {
+      width: 100%;
+      font-size: 1.3rem; }
+  .interior .interior__content .interior-img {
+    width: 40%;
+    margin: auto 0; }
+    .interior .interior__content .interior-img img {
+      width: 100%; }
+  .pricing .pricing__header p {
+    width: 100%;
+    font-size: 1.3rem; }
+  .pricing .pricing__items .pricing__item {
+    flex-basis: 32%; }
+    .pricing .pricing__items .pricing__item .pricing__item__list li {
+      font-size: 1.2rem; }
+  .screenshot .screenshot__header p {
+    width: 100%;
+    font-size: 1.3rem; }
+  .screenshot .screenshot__images figure:First-child {
+    display: none; }
+  .testimonials .testimonial__header p {
+    width: 100%;
+    font-size: 1.3rem; }
+  .testimonials .testimonial__items .testimonial__item {
+    flex-basis: 48%;
+    margin-bottom: 1rem; }
+    .testimonials .testimonial__items .testimonial__item .testimonial__item__info p {
+      width: 100%;
+      font-size: 1.3rem; }
+  .download-app .download-app__info {
+    width: 100%;
+    font-size: 1.5rem; }
+    .download-app .download-app__info .download-app__btn a {
+      margin-bottom: 1rem; }
+  .last-news .last-news__header p {
+    width: 100%;
+    font-size: 1.3rem; }
+  .last-news .last-news__items .last-news__item {
+    flex-basis: 45%;
+    padding: 1rem;
+    margin-bottom: 1rem; }
+    .last-news .last-news__items .last-news__item p {
+      font-size: 1.5rem; }
+    .last-news .last-news__items .last-news__item .last-news__item__icons {
+      font-size: 1.5rem; } }
